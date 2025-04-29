@@ -24,7 +24,7 @@ const Register = () => {
   };
 
   return (
-    <div style={{ maxWidth: "400px", margin: "0 auto", padding: "20px" }}>
+    <div className="w-400px p-5">
       <h2>Register</h2>
       {error && <div style={{ color: "red", marginBottom: "15px" }}>{error}</div>}
       <form onSubmit={handlesubmit}>
@@ -72,7 +72,7 @@ const Register = () => {
         </div>
       </form>
     </div>
-  )
+  );
 };
 
 export default Register;
