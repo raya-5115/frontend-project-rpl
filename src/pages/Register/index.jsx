@@ -24,11 +24,11 @@ const Register = () => {
   };
 
   return (
-    <div className="w-400px p-5">
+    <div className="w-full m-5 items-center border-2 bg-amber-100">
       <h2>Register</h2>
       {error && <div style={{ color: "red", marginBottom: "15px" }}>{error}</div>}
       <form onSubmit={handlesubmit}>
-        <div style={{ marginBottom: "15px" }}>
+        <div className="mb-5">
           <label htmlFor="username" style={{ display: "block", marginBottom: "5px" }}>Username</label>
           <input
             type="text"
